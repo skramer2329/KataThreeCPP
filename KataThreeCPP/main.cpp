@@ -1,8 +1,8 @@
 #include <iostream>
 #include <cmath>
 //This code is about creating and calling functions
-//I need to at least declare the functions before main. Otherwise it won't work. Line 5 needs to come before main.
-int multiply(int x, int y);
+//I need to at least declare the functions before main. Otherwise it won't work. Line 5 needs to come before main. Note: can declare AND define also.
+int multiply(int, int);
 
 
 int main() {
@@ -23,6 +23,9 @@ int main() {
 
 	std::cout << "The base is " << base << " and the exponent is " << exponent << std::endl;
 	std::cout << "The result is " << pow(base, exponent) << std::endl;
+
+	double power = pow(base, exponent);
+	std::cout << power << std::endl;
 
 	return 0;
 }
